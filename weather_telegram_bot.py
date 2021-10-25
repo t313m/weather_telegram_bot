@@ -1,9 +1,9 @@
 from pyowm import OWM
 import telebot
-from pyowm.utils import config as cfg
+from pyowm.utils import config as cfg #for change language 
 
 config = cfg.get_default_config()
-config['language'] = 'ru'
+config['language'] = 'ru' # write language 
 
 owm = OWM('')  #Take if from https://openweathermap.org/
 bot = telebot.TeleBot("", parse_mode=None) #Take it from BotFather in telegram
